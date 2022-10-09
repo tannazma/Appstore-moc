@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            display: flex;
+            flex-direction: row;
+            height: 100vh;
+        }
+
+        aside {
+            background-color: purple;
+            width: 200px;
+        }
+
+        .main-content {
+            flex: 1;
+        }
+
+        .banner {
+            background-color: burlywood;
+            height: 200px;
+        }
+
+        #featured {
+            display: flex;
+            flex-direction: row;
+            background-color: aquamarine;
+            height: 200px;
+        }
+
+        #app-list {
+            display: flex;
+            flex-direction: row;
+            background-color: #385897;
+            height: 200px;
+        }
+    </style>
+</head>
+
+<body>
+    <aside>Navar baghal</aside>
+    <div class="main-content">
+        <div class="banner">banner</div>
+        <div id="featured">
+            <div style="flex:1">featured 1</div>
+            <div style="flex:1">featured 2</div>
+        </div>
+        <div id="app-list">lists</div>
+    </div>
+</body>
+
+</html>
