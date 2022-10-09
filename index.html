@@ -59,12 +59,34 @@
             margin-left: 15px;
             margin-right: 10px;
         }
+
+        .Menu span {
+            color: aqua;
+        }
+
+        .Menu>* {
+            width: 100%;
+        }
+
+        .Menu .Selected {
+            background-color: rgb(93, 93, 92);
+        }
     </style>
 </head>
 
 <body>
     <aside>
-        <div style="flex:1">Menu</div>
+        <div style="flex:1" class="Menu">
+            <input placeholder="Search" style="background-color: lightgray; border:none" />
+            <div class="Selected"><span>1</span> Discover</div>
+            <div><span>2</span> Arcade</div>
+            <div><span>3</span> Create</div>
+            <div><span>4</span> Work</div>
+            <div><span>5</span> Play</div>
+            <div><span>6</span> Develop</div>
+            <div><span>7</span> Categories</div>
+            <div><span>8</span> Updates</div>
+        </div>
         <div class="User">
             <div class="User-avatar">TM</div>
             <div>Tannaz Mohamadi</div>
