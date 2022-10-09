@@ -43,13 +43,32 @@
             background-color: #385897;
             height: 200px;
         }
+
+        .User {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            margin-bottom: 15px;
+        }
+
+        .User-avatar {
+            background-color: gray;
+            color: white;
+            padding: 10px;
+            border-radius: 50%;
+            margin-left: 15px;
+            margin-right: 10px;
+        }
     </style>
 </head>
 
 <body>
     <aside>
         <div style="flex:1">Menu</div>
-        <div>User</div>
+        <div class="User">
+            <div class="User-avatar">TM</div>
+            <div>Tannaz Mohamadi</div>
+        </div>
     </aside>
     <div class="main-content">
         <div class="banner">banner</div>
