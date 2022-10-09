@@ -1,1 +1,3 @@
-console.log("Hello");
+function selectMenu(menuItem) {
+    menuItem.classList.add("Selected");
+}
