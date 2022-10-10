@@ -75,6 +75,7 @@ aside {
     flex-direction: row;
     height: 220px;
     border-radius: 8px;
+    gap: 20px;
 }
 
 .featured1 {
@@ -100,11 +101,7 @@ aside {
     border-radius: 8px;
 }
 
-.flexgap>div {
+#featured>div {
     padding: 6px;
     display: flex;
-}
-
-.flexgap {
-    gap: 20px;
 }
