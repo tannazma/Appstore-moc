@@ -16,11 +16,6 @@ aside {
     flex: 1;
 }
 
-.banner {
-    background-color: burlywood;
-    height: 200px;
-}
-
 #featured {
     display: flex;
     flex-direction: row;
@@ -64,4 +59,13 @@ aside {
 
 .Menu .Selected {
     background-color: rgb(93, 93, 92);
+}
+
+.bannerTop {
+    background-image:
+        url("banner.png");
+    background-size: cover;
+    background-position: right;
+    width:"300px";
+    margin:"0px";
 }
