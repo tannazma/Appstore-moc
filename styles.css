@@ -86,11 +86,9 @@ aside {
     border-radius: 8px;
 }
 
-.element {
+.featured-image{
     border-radius: 50%;
-    float: right;
     margin-left: auto;
-    display: block;
 }
 
 .featured2 {
