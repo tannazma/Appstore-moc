@@ -66,6 +66,23 @@ aside {
         url("banner.png");
     background-size: cover;
     background-position: right;
-    width:"300px";
-    margin:"0px";
+    width: "300px";
+    margin: "0px";
+}
+
+#featured1 {
+    display: flex;
+    flex: 1;
+}
+.element {
+    border-radius: 50%;
+}
+
+#featured2 {
+    flex: 1;
+    display: flex;
+}
+
+.flex-gap>div {
+    margin: 12px;
 }
