@@ -78,7 +78,7 @@ aside {
 
 @media screen and (max-width:1200px) {
     .bannerTop{
-        height: 360px;
+        height: 264px;
     }
 }
 
@@ -101,7 +101,13 @@ aside {
 
 .featured-image{
     border-radius: 50%;
-    margin-left: auto;
+    margin: auto;
+    display: flex;
+    width: 150px;
+    height: 150px;
+    
+    
+
 }
 
 .featured2 {
