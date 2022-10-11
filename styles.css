@@ -13,6 +13,8 @@ aside {
     display: flex;
     flex-direction: column;
     font-family: sans-serif;
+    font-size: 15px;
+    font-style: inherit;
 }
 
 .main-content {
@@ -35,6 +37,8 @@ aside {
     flex-direction: row;
     align-items: center;
     margin-bottom: 15px;
+    color: #5e5d5d;
+    font-size: 14px;
 }
 
 .User-avatar {
@@ -45,8 +49,11 @@ aside {
     margin-left: 15px;
     margin-right: 10px;
 }
-.Menu{
+
+.Menu {
     margin-top: 30px;
+    color: #5e5d5d;
+    font-size: 14px;
 }
 
 .Menu span {
@@ -76,8 +83,13 @@ aside {
     padding: 6px
 }
 
+.bannerTop p {
+    color: #616161;
+    font-size: 14px;
+}
+
 @media screen and (max-width:1200px) {
-    .bannerTop{
+    .bannerTop {
         height: 264px;
     }
 }
@@ -85,28 +97,40 @@ aside {
 #featured {
     display: flex;
     flex-direction: row;
-    height: 220px;
+    height: 230px;
     border-radius: 8px;
     gap: 20px;
     margin-bottom: 20px;
+
 }
+
+@media screen and (max-width:889px){
+    #featured {
+        height: 260px
+    }
+}
+
+#featured p {
+    color: #9c9c9c;
+    font-size: 14px;
+}
+
 
 .featured1 {
     display: flex;
     flex: 1;
-    background-color:  #f3f3f3;
+    background-color: #f3f3f3;
     flex-direction: row;
     border-radius: 8px;
 }
 
-.featured-image{
+.featured-image {
     border-radius: 50%;
     margin: auto;
     display: flex;
-    width: 150px;
-    height: 150px;
-    
-    
+    margin-right: 0px;
+    width: 170px;
+    height: 170px;
 
 }
 
