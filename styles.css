@@ -25,12 +25,7 @@ aside {
 }
 
 
-#app-list {
-    display: flex;
-    flex-direction: row;
-    background-color: #f3f3f3;
-    height: 200px;
-}
+
 
 .User {
     display: flex;
@@ -104,7 +99,7 @@ aside {
 
 }
 
-@media screen and (max-width:889px){
+@media screen and (max-width:889px) {
     #featured {
         height: 260px
     }
@@ -145,4 +140,39 @@ aside {
 #featured>div {
     padding: 6px;
     display: flex;
+}
+
+#app-list {
+    flex-direction: row;
+    display: flex;
+}
+
+#app-list>div {
+    padding: 6px;
+    flex: 1;
+}
+
+.apps2 {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+}
+
+.liquidText {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+#app-list p {
+    color: #9c9c9c;
+    font-size: 14px;
+}
+
+#app-list button {
+    color: rgb(47, 47, 226);
+    background-color: #cdcdcd;
+    border-radius: 30px;
+    border: 0px;
+    padding: 5px 20px;
 }
