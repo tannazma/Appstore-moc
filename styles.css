@@ -176,3 +176,9 @@ aside {
     border: 0px;
     padding: 5px 20px;
 }
+
+.app-item {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
