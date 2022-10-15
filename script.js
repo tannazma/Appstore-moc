@@ -5,17 +5,6 @@ function selectMenu(menuItem) {
 }
 
 
-const updates = document.createElement("div");
-updates.textContent = " Updates";
-updates.onclick = function () {
-    selectMenu(updates)
-}
-
-const eight = document.createElement("span");
-eight.textContent = 8;
-
-updates.prepend(eight);
-menu.appendChild(updates)
 
 const categories = document.createElement("div");
 categories.textContent = " Categories";
@@ -39,3 +28,15 @@ six.textContent = 6;
 
 develop.prepend(six);
 menu.appendChild(develop);
+
+const updates = document.createElement("div");
+updates.textContent = " Updates";
+updates.onclick = function () {
+    selectMenu(updates)
+}
+
+const eight = document.createElement("span");
+eight.textContent = 8;
+
+updates.prepend(eight);
+menu.appendChild(updates)

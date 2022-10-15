@@ -143,19 +143,19 @@ aside {
 }
 
 #app-list {
-    flex-direction: row;
     display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+}   
+
+#app-list>* {
+    flex: 1 1 1;
 }
 
 #app-list>div {
     padding: 6px;
-    flex: 1;
-}
-
-.apps2 {
-    display: flex;
-    flex: 1;
-    flex-direction: column;
+    width: 33%;
+    box-sizing: border-box;
 }
 
 .liquidText {
@@ -179,6 +179,5 @@ aside {
 
 .app-item {
     display: flex;
-    flex-direction: row;
     justify-content: space-between;
 }
