@@ -4,39 +4,32 @@ function selectMenu(menuItem) {
     menuItem.classList.add("Selected");
 }
 
+const menuItems = [
+    { id: 1, title: "Discover" },
+    { id: 2, title: "Arcade" },
+    { id: 3, title: "Create" },
+    { id: 4, title: "Work" },
+    { id: 5, title: "Play" },
+    { id: 6, title: "Develop" },
+    { id: 7, title: "Categories" },
+    { id: 8, title: "Updates" }];
 
+menuItems.forEach(function (menuItem) {
+    const menuItemDiv = document.createElement("div");
+    menuItemDiv.textContent = " " + menuItem.title;
+    menuItemDiv.onclick = function () {
+        selectMenu(menuItemDiv)
+    }
 
-const categories = document.createElement("div");
-categories.textContent = " Categories";
-categories.onclick = function () {
-    selectMenu(categories)
-}
+    if (menuItem.id === 1) {
+        menuItemDiv.className = "Selected"
 
-const seven = document.createElement("span");
-seven.textContent = 7;
+    }
 
-categories.prepend(seven);
-menu.appendChild(categories);
+    const menuItemIdSpan = document.createElement("span");
+    menuItemIdSpan.textContent = menuItem.id;
 
-const develop = document.createElement("div");
-develop.textContent = " Develop";
-develop.onclick = function () {
-    selectMenu(develop)
-}
-const six = document.createElement("span");
-six.textContent = 6;
+    menuItemDiv.prepend(menuItemIdSpan);
+    menu.appendChild(menuItemDiv);
+})
 
-develop.prepend(six);
-menu.appendChild(develop);
-
-const updates = document.createElement("div");
-updates.textContent = " Updates";
-updates.onclick = function () {
-    selectMenu(updates)
-}
-
-const eight = document.createElement("span");
-eight.textContent = 8;
-
-updates.prepend(eight);
-menu.appendChild(updates)
