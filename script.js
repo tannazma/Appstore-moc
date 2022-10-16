@@ -53,29 +53,14 @@ const appListContainer = document.querySelector("#app-list");
 applist.forEach(function (itemApp) {
     const itemAppDiv = document.createElement("div");
     itemAppDiv.className = "app-item";
-
-    const getButton = document.createElement("button");
-    getButton.textContent = "Get";
-
-    const firstDivInsideEachAppDiv = document.createElement("div");
-    firstDivInsideEachAppDiv.textContent = itemApp.title;
-
-
-    const appDescription = document.createElement("p");
-    appDescription.textContent = itemApp.description;
-
-
-    const itemAppIdSpan = document.createElement("span");
-    itemAppIdSpan.textContent = itemApp.id + " ";
-
-    itemAppDiv.append(firstDivInsideEachAppDiv);
-    firstDivInsideEachAppDiv.append(appDescription)
-
-
     appListContainer.append(itemAppDiv);
-
-    const getButtonDiv = document.createElement("div");
-    getButtonDiv.appendChild(getButton);
-    itemAppDiv.appendChild(getButtonDiv);
-    firstDivInsideEachAppDiv.prepend(itemAppIdSpan);
+    itemAppDiv.innerHTML = `
+    <div>
+        <span>${itemApp.id} </span>
+        ${itemApp.title}
+        <p>${itemApp.description}</p>
+    </div>
+    <div>
+        <button>Get</button>
+    </div>`
 })
