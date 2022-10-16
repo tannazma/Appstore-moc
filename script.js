@@ -61,3 +61,17 @@ fetch("https://aghardeshir.github.io/mock-json-practice/mock-app-list.json").the
         )
     }
 )
+
+fetch("https://aghardeshir.github.io/mock-json-practice/mock-user.json").then(
+    function (response) {
+        response.json().then(
+            function (user) {
+                const userAvatarDiv = document.querySelector(".User-avatar");
+                userAvatarDiv.textContent = user.avatar;
+
+                const userNameDiv = document.querySelector("#User-name");
+                userNameDiv.textContent = user.name;
+            }
+        )
+    }
+)
