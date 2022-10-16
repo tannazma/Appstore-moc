@@ -1,8 +1,5 @@
 const menu = document.querySelector(".Menu");
 
-function selectMenu(menuItem) {
-    menuItem.classList.add("Selected");
-}
 
 const menuItems = [
     { id: 1, title: "Discover" },
@@ -33,9 +30,16 @@ menuItems.forEach(function (menuItem) {
     menu.appendChild(menuItemDiv);
 })
 
+function selectMenu(menuItem) {
+    const currentlySelectedMenu = document.querySelector(".Selected");
+    currentlySelectedMenu.classList.remove("Selected")
+
+    menuItem.classList.add("Selected");
+}
+
 const applist = [
-    
-    { id: 1, title: "LiquidText", description: "Annotate and review documents" }, 
+
+    { id: 1, title: "LiquidText", description: "Annotate and review documents" },
     { id: 2, title: "BBEdit", description: "Legendary text and code editor" },
     { id: 3, title: "Pixelmator Pro", description: "Pro image edditing for everyon" },
     { id: 4, title: "Soulver", description: "Notpad, meet calculator" },
