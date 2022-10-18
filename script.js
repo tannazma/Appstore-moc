@@ -80,8 +80,6 @@ fetch("https://aghardeshir.github.io/mock-json-practice/mock-user.json").then(
 )
 
 
-
-
 fetch("star.svg").then(
     function (response1) {
         response1.text().then(
@@ -99,6 +97,77 @@ fetch("apple.svg").then(
             function (svg) {
                 const apple = document.querySelector("#menuItemIcon2");
                 apple.innerHTML = svg;
+
+            }
+        )
+    }
+)
+fetch("users.svg").then(
+    function (response) {
+        response.text().then(
+            function (svg) {
+                const users = document.querySelector("#menuItemIcon3");
+                users.innerHTML = svg;
+
+            }
+        )
+    }
+)
+
+fetch("list.svg").then(
+    function (response) {
+        response.text().then(
+            function (svg) {
+                const list = document.querySelector("#menuItemIcon4");
+                list.innerHTML = svg;
+
+            }
+        )
+    }
+)
+
+fetch("shopping.svg").then(
+    function (response) {
+        response.text().then(
+            function (svg) {
+                const shopping = document.querySelector("#menuItemIcon5");
+                shopping.innerHTML = svg;
+
+            }
+        )
+    }
+)
+
+fetch("megaphone.svg").then(
+    function (response) {
+        response.text().then(
+            function (svg) {
+                const megaphone = document.querySelector("#menuItemIcon6");
+                megaphone.innerHTML = svg;
+
+            }
+        )
+    }
+)
+
+fetch("home.svg").then(
+    function (response) {
+        response.text().then(
+            function (svg) {
+                const home = document.querySelector("#menuItemIcon7");
+                home.innerHTML = svg;
+
+            }
+        )
+    }
+)
+
+fetch("bulb.svg").then(
+    function (response) {
+        response.text().then(
+            function (svg) {
+                const bulb = document.querySelector("#menuItemIcon8");
+                bulb.innerHTML = svg;
 
             }
         )

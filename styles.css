@@ -71,6 +71,7 @@ aside {
 .Menu span svg {
     fill: blue;
     width: 20px;
+    height: 20px;
 }
 
 .Menu>* {
