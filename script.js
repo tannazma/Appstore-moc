@@ -75,3 +75,14 @@ fetch("https://aghardeshir.github.io/mock-json-practice/mock-user.json").then(
         )
     }
 )
+
+fetch("star.svg").then(
+    function (response1) {
+        response1.text().then(
+            function (svg) {
+                console.log(svg)
+            }
+        )
+    }
+)
+
