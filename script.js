@@ -51,7 +51,7 @@ fetch("https://aghardeshir.github.io/mock-json-practice/mock-app-list.json").the
                     <div>
                         <span>${itemApp.id} </span>
                         ${itemApp.title}
-                        <p>${itemApp.description}</p>
+                        <p class="description">${itemApp.description}</p>
                     </div>
                     <div>
                         <button>Get</button>
