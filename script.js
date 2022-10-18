@@ -26,8 +26,11 @@ menuItems.forEach(function (menuItem) {
     const menuItemIdSpan = document.createElement("span");
     menuItemIdSpan.textContent = menuItem.id;
 
+    menuItemIdSpan.id = "menuItemIcon";
+
     menuItemDiv.prepend(menuItemIdSpan);
     menu.appendChild(menuItemDiv);
+
 })
 
 function selectMenu(menuItem) {
@@ -49,12 +52,12 @@ fetch("https://aghardeshir.github.io/mock-json-practice/mock-app-list.json").the
                     appListContainer.append(itemAppDiv);
                     itemAppDiv.innerHTML = `
                     <div>
-                        <span>${itemApp.id} </span>
-                        ${itemApp.title}
-                        <p class="description">${itemApp.description}</p>
+                    <span>${itemApp.id} </span>
+                    ${itemApp.title}
+                    <p class="description">${itemApp.description}</p>
                     </div>
                     <div>
-                        <button>Get</button>
+                    <button>Get</button>
                     </div>`
                 })
             }
@@ -76,13 +79,17 @@ fetch("https://aghardeshir.github.io/mock-json-practice/mock-user.json").then(
     }
 )
 
+
+
+
 fetch("star.svg").then(
     function (response1) {
         response1.text().then(
             function (svg) {
-                console.log(svg)
+                const star = document.querySelector("#menuItemIcon");
+                star.innerHTML = svg;
+
             }
         )
     }
 )
-
