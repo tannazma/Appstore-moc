@@ -26,7 +26,7 @@ menuItems.forEach(function (menuItem) {
     const menuItemIdSpan = document.createElement("span");
     menuItemIdSpan.textContent = menuItem.id;
 
-    menuItemIdSpan.id = "menuItemIcon";
+    menuItemIdSpan.id = "menuItemIcon" + menuItem.id;
 
     menuItemDiv.prepend(menuItemIdSpan);
     menu.appendChild(menuItemDiv);
@@ -86,8 +86,19 @@ fetch("star.svg").then(
     function (response1) {
         response1.text().then(
             function (svg) {
-                const star = document.querySelector("#menuItemIcon");
+                const star = document.querySelector("#menuItemIcon1");
                 star.innerHTML = svg;
+
+            }
+        )
+    }
+)
+fetch("apple.svg").then(
+    function (response) {
+        response.text().then(
+            function (svg) {
+                const apple = document.querySelector("#menuItemIcon2");
+                apple.innerHTML = svg;
 
             }
         )
