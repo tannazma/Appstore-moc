@@ -2,14 +2,14 @@ const menu = document.querySelector(".Menu");
 
 
 const menuItems = [
-    { id: 1, title: "Discover" },
-    { id: 2, title: "Arcade" },
-    { id: 3, title: "Create" },
-    { id: 4, title: "Work" },
-    { id: 5, title: "Play" },
-    { id: 6, title: "Develop" },
-    { id: 7, title: "Categories" },
-    { id: 8, title: "Updates" }];
+    { id: 1, title: "Discover", icon: "star.svg" },
+    { id: 2, title: "Arcade", icon: "apple.svg" },
+    { id: 3, title: "Create", icon: "users.svg" },
+    { id: 4, title: "Work", icon: "list.svg" },
+    { id: 5, title: "Play", icon: "shopping.svg" },
+    { id: 6, title: "Develop", icon: "megaphone.svg" },
+    { id: 7, title: "Categories", icon: "home.svg" },
+    { id: 8, title: "Updates", icon: "bulb.svg" }];
 
 menuItems.forEach(function (menuItem) {
     const menuItemDiv = document.createElement("div");
@@ -80,96 +80,109 @@ fetch("https://aghardeshir.github.io/mock-json-practice/mock-user.json").then(
 )
 
 
-fetch("star.svg").then(
-    function (response1) {
-        response1.text().then(
-            function (svg) {
-                const star = document.querySelector("#menuItemIcon1");
-                star.innerHTML = svg;
+// fetch("star.svg").then(
+//     function (response1) {
+//         response1.text().then(
+//             function (svg) {
+//                 const star = document.querySelector("#menuItemIcon1");
+//                 star.innerHTML = svg;
+//             }
+//         )
+//     }
+// )
+// fetch("apple.svg").then(
+//     function (response) {
+//         response.text().then(
+//             function (svg) {
+//                 const apple = document.querySelector("#menuItemIcon2");
+//                 apple.innerHTML = svg;
 
-            }
-        )
-    }
-)
-fetch("apple.svg").then(
-    function (response) {
-        response.text().then(
-            function (svg) {
-                const apple = document.querySelector("#menuItemIcon2");
-                apple.innerHTML = svg;
+//             }
+//         )
+//     }
+// )
+// fetch("users.svg").then(
+//     function (response) {
+//         response.text().then(
+//             function (svg) {
+//                 const users = document.querySelector("#menuItemIcon3");
+//                 users.innerHTML = svg;
 
-            }
-        )
-    }
-)
-fetch("users.svg").then(
-    function (response) {
-        response.text().then(
-            function (svg) {
-                const users = document.querySelector("#menuItemIcon3");
-                users.innerHTML = svg;
+//             }
+//         )
+//     }
+// )
 
-            }
-        )
-    }
-)
+// fetch("list.svg").then(
+//     function (response) {
+//         response.text().then(
+//             function (svg) {
+//                 const list = document.querySelector("#menuItemIcon4");
+//                 list.innerHTML = svg;
 
-fetch("list.svg").then(
-    function (response) {
-        response.text().then(
-            function (svg) {
-                const list = document.querySelector("#menuItemIcon4");
-                list.innerHTML = svg;
+//             }
+//         )
+//     }
+// )
 
-            }
-        )
-    }
-)
+// fetch("shopping.svg").then(
+//     function (response) {
+//         response.text().then(
+//             function (svg) {
+//                 const shopping = document.querySelector("#menuItemIcon5");
+//                 shopping.innerHTML = svg;
 
-fetch("shopping.svg").then(
-    function (response) {
-        response.text().then(
-            function (svg) {
-                const shopping = document.querySelector("#menuItemIcon5");
-                shopping.innerHTML = svg;
+//             }
+//         )
+//     }
+// )
 
-            }
-        )
-    }
-)
+// fetch("megaphone.svg").then(
+//     function (response) {
+//         response.text().then(
+//             function (svg) {
+//                 const megaphone = document.querySelector("#menuItemIcon6");
+//                 megaphone.innerHTML = svg;
 
-fetch("megaphone.svg").then(
-    function (response) {
-        response.text().then(
-            function (svg) {
-                const megaphone = document.querySelector("#menuItemIcon6");
-                megaphone.innerHTML = svg;
+//             }
+//         )
+//     }
+// )
 
-            }
-        )
-    }
-)
+// fetch("home.svg").then(
+//     function (response) {
+//         response.text().then(
+//             function (svg) {
+//                 const home = document.querySelector("#menuItemIcon7");
+//                 home.innerHTML = svg;
 
-fetch("home.svg").then(
-    function (response) {
-        response.text().then(
-            function (svg) {
-                const home = document.querySelector("#menuItemIcon7");
-                home.innerHTML = svg;
+//             }
+//         )
+//     }
+// )
 
-            }
-        )
-    }
-)
+// fetch("bulb.svg").then(
+//     function (response) {
+//         response.text().then(
+//             function (svg) {
+//                 const bulb = document.querySelector("#menuItemIcon8");
+//                 bulb.innerHTML = svg;
 
-fetch("bulb.svg").then(
-    function (response) {
-        response.text().then(
-            function (svg) {
-                const bulb = document.querySelector("#menuItemIcon8");
-                bulb.innerHTML = svg;
+//             }
+//         )
+//     }
+// )
 
-            }
-        )
-    }
-)
+menuItems.forEach(function (menuItem) {
+    fetch(menuItem.icon).then(
+        function (response) {
+            response.text().then(
+                function (svg) {
+                    const icons = document.querySelector("#menuItemIcon" + menuItem.id);
+                    icons.innerHTML = svg;
+
+                }
+            )
+        }
+    )
+})
