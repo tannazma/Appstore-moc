@@ -18,7 +18,6 @@ aside {
 }
 
 .main-content {
-    flex: 1;
     font-family: sans-serif;
     padding-left: 30px;
     padding-right: 30px;
@@ -51,12 +50,6 @@ aside {
     padding-right: 14px;
 }
 
-.description {
-    white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
-    width: 280px;
-}
 
 .Menu {
     margin-top: 30px;
@@ -161,10 +154,43 @@ aside {
     display: flex;
 }
 
+.list {
+    display: flex;
+
+}
+
+.itemApp {
+    display: flex;
+
+}
+
+.itemAppSpanImage {
+    flex: 1;
+}
+
+.appTitleDescription {
+    display: flex;
+    flex-direction: column;
+}
+
+.appLisButton {
+    display: flex;
+    flex-direction: column;
+}
+
+.description p{
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    width: 280px;
+}
+
 #app-list {
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
+    justify-content: space-between;
+
 }
 
 #app-list>* {
@@ -177,30 +203,22 @@ aside {
     box-sizing: border-box;
 }
 
-.liquidText {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-}
-
 #app-list p {
     color: #9c9c9c;
     font-size: 14px;
+    align-content: flex-start;
 }
 
 #app-list button {
     color: rgb(47, 47, 226);
-    background-color: #cdcdcd;
+    background-color: #e0e0e0;
     border-radius: 30px;
     border: 0px;
     padding: 5px 20px;
 }
 
-.app-item {
-    display: flex;
-    justify-content: space-between;
-}
-
 .itemAppSpanImage img {
-    width: 30px;
+    width: 35px;
+    border-radius: 10px;
+    background-size: contain;
 }

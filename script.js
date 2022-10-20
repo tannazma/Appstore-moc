@@ -60,18 +60,31 @@ fetch("https://aghardeshir.github.io/mock-json-practice/mock-app-list.json").the
             function (appList) {
                 appList.forEach(function (itemApp) {
                     const itemAppDiv = document.createElement("div");
-                    itemAppDiv.className = "app-item";
+                    itemAppDiv.className = "itemApps";
                     appListContainer.append(itemAppDiv);
                     itemAppDiv.innerHTML = `
-                    <div>
-                    <span class="itemAppSpanImage">
-                    <img src="${itemApp.imageUrl}"/> 
-                    </span>
-                    ${itemApp.title}
-                    <p class="description">${itemApp.description}</p>
-                    </div>
-                    <div>
-                    <button>Get</button>
+                    <div class="list">
+                        <div class="itemApp">
+                            <div class="itemAppSpanImage">
+                                    <img src="${itemApp.imageUrl}"/> 
+                            </div>
+                        </div>
+                        <div class="appTitleDescription">
+                            <div class="itemAppTitle">
+                                ${itemApp.title}
+                            </div>
+                            <div class="description">
+                                    <p >${itemApp.description}</p>
+                            </div>
+                        </div>
+                        <div class="appLisButton">
+                            <div class="button">
+                                <button>Get</button>
+                            </div>
+                            <div class="buttonP">
+                                <p> mnew</p>
+                            </div>
+                        </div>
                     </div>`
                 })
             }
