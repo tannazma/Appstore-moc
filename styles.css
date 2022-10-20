@@ -154,8 +154,9 @@ aside {
     display: flex;
 }
 
-.list {
+.itemApps {
     display: flex;
+    flex-direction: row;
 
 }
 
@@ -207,6 +208,10 @@ aside {
     color: #9c9c9c;
     font-size: 14px;
     align-content: flex-start;
+    margin: 0;
+}
+.buttonP p{
+    text-align: center;
 }
 
 #app-list button {
@@ -217,8 +222,9 @@ aside {
     padding: 5px 20px;
 }
 
-.itemAppSpanImage img {
+.itemApps img {
     width: 35px;
+    height: 35px;
     border-radius: 10px;
     background-size: contain;
 }

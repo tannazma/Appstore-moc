@@ -63,12 +63,7 @@ fetch("https://aghardeshir.github.io/mock-json-practice/mock-app-list.json").the
                     itemAppDiv.className = "itemApps";
                     appListContainer.append(itemAppDiv);
                     itemAppDiv.innerHTML = `
-                    <div class="list">
-                        <div class="itemApp">
-                            <div class="itemAppSpanImage">
                                     <img src="${itemApp.imageUrl}"/> 
-                            </div>
-                        </div>
                         <div class="appTitleDescription">
                             <div class="itemAppTitle">
                                 ${itemApp.title}
@@ -84,8 +79,7 @@ fetch("https://aghardeshir.github.io/mock-json-practice/mock-app-list.json").the
                             <div class="buttonP">
                                 <p> mnew</p>
                             </div>
-                        </div>
-                    </div>`
+                        </div>`
                 })
             }
         )
