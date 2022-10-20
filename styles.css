@@ -154,6 +154,20 @@ aside {
     display: flex;
 }
 
+.appListContainer {
+    display: flex;
+    flex-wrap: wrap;
+    border-top: 1.5px solid rgb(219, 219, 219);
+}
+
+#appListTitle {
+    flex: 1;
+}
+
+#appListTitleP {
+    color: rgb(52, 116, 244);
+}
+
 .itemApps {
     display: flex;
     flex-direction: row;
@@ -173,7 +187,7 @@ aside {
     display: flex;
     flex-direction: column;
     margin-left: 10px;
-    border-bottom: 1.5px solid  rgb(219, 219, 219);ay;
+    border-bottom: 1.5px solid rgb(219, 219, 219);
 }
 
 .appLisButton {
@@ -182,11 +196,12 @@ aside {
     border-bottom: 1.5px solid rgb(219, 219, 219);
 }
 
-.description p{
+.description p {
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
     width: 280px;
+    font-size: 14px;
 }
 
 #app-list {
@@ -209,21 +224,23 @@ aside {
 
 #app-list p {
     color: #9c9c9c;
-    font-size: 14px;
+    margin-bottom: 8px;
     align-content: flex-start;
     margin: 0;
 }
-.buttonP p{
+
+.buttonP p {
     text-align: center;
+    font-size: xx-small;
 }
 
 #app-list button {
-    color: rgb(47, 47, 226);
+    color: rgb(52, 116, 244);
     background-color: #e0e0e0;
     border-radius: 30px;
     border: 0px;
     padding: 5px 20px;
-    border-bottom: 1.5px solid  rgb(219, 219, 219);
+    border-bottom: 1.5px solid rgb(219, 219, 219);
 }
 
 .itemApps img {

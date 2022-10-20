@@ -77,7 +77,7 @@ fetch("https://aghardeshir.github.io/mock-json-practice/mock-app-list.json").the
                                 <button>Get</button>
                             </div>
                             <div class="buttonP">
-                                <p> mnew</p>
+                                <p>In-App Purchases</p>
                             </div>
                         </div>`
                 })
