@@ -10,31 +10,31 @@ const menuItems = [
     { id: 6, title: "Develop", icon: "megaphone.svg" },
     { id: 7, title: "Categories", icon: "home.svg" },
     { id: 8, title: "Updates", icon: "bulb.svg" }];
-    
-    menuItems.forEach(function (menuItem) {
-        fetch(menuItem.icon).then(
-            function (response) {
-                response.text().then(
-                    function (svg) {
-                        const icons = document.querySelector("#menuItemIcon" + menuItem.id);
-                        icons.innerHTML = svg;
-    
-                    }
-                )
-            }
-        )
-        const menuItemDiv = document.createElement("div");
-        menuItemDiv.textContent = " " + menuItem.title;
-        menuItemDiv.onclick = function () {
-            selectMenu(menuItemDiv)
+
+menuItems.forEach(function (menuItem) {
+    fetch(menuItem.icon).then(
+        function (response) {
+            response.text().then(
+                function (svg) {
+                    const icons = document.querySelector("#menuItemIcon" + menuItem.id);
+                    icons.innerHTML = svg;
+
+                }
+            )
         }
-        
-        if (menuItem.id === 1) {
-            menuItemDiv.className = "Selected"
-            
+    )
+    const menuItemDiv = document.createElement("div");
+    menuItemDiv.textContent = " " + menuItem.title;
+    menuItemDiv.onclick = function () {
+        selectMenu(menuItemDiv)
     }
 
- 
+    if (menuItem.id === 1) {
+        menuItemDiv.className = "Selected"
+
+    }
+
+
     const menuItemIdSpan = document.createElement("span");
     menuItemIdSpan.textContent = menuItem.id;
 
@@ -64,7 +64,9 @@ fetch("https://aghardeshir.github.io/mock-json-practice/mock-app-list.json").the
                     appListContainer.append(itemAppDiv);
                     itemAppDiv.innerHTML = `
                     <div>
-                    <span>${itemApp.id} </span>
+                    <span class="itemAppSpanImage">
+                    <img src="${itemApp.imageUrl}"/> 
+                    </span>
                     ${itemApp.title}
                     <p class="description">${itemApp.description}</p>
                     </div>
