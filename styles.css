@@ -21,8 +21,28 @@ aside {
     font-family: sans-serif;
     padding-left: 30px;
     padding-right: 30px;
+    position: relative;
+
 }
 
+.main-content:hover .overlay {
+    opacity: 1;
+}
+
+.overlay {
+    position: absolute;
+    left: 0;
+    right: 0;
+    height: 5%;
+    opacity: 0;
+    background-color: #f2f4e1;
+}
+
+.text {
+    color: rgb(50, 49, 49);
+    font-size: 18px;
+    text-align: center;
+}
 
 .User {
     display: flex;
