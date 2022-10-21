@@ -224,13 +224,6 @@ aside {
     font-size: 14px;
 }
 
-#app-list {
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-    justify-content: space-between;
-
-}
 
 #app-list>* {
     flex: 1 1 1;
@@ -268,4 +261,17 @@ aside {
     height: 35px;
     border-radius: 10px;
     background-size: contain;
+}
+
+#app-list {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
+
+}
+@media screen and (max-width:1138px){
+    #app-list>div{
+        width: 50%;
+    }
 }
