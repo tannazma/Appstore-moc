@@ -22,6 +22,8 @@ aside {
     padding-left: 30px;
     padding-right: 30px;
     position: relative;
+    height: 100vh;
+    overflow: auto;
 
 }
 
