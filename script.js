@@ -99,11 +99,13 @@ fetch("https://aghardeshir.github.io/mock-json-practice/mock-user.json").then(
         )
     }
 )
-window.addEventListener("scroll", function () {
-    if (window.scrollY === 0) {
-        const element1 = document.querySelector(".overlay"); element1.style.opacity = 0
-    } else if (window.scrollY > 0) {
-        const element2 = document.querySelector(".overlay"); element2.style.opacity = 0.9
+const mainContent = document.querySelector(".main-content")
+const overlay = document.querySelector(".overlay")
+mainContent.addEventListener("scroll", function () {
+    if (mainContent.scrollTop === 0) {
+        overlay.style.opacity = 0
+    } else if (mainContent.scrollTop > 0) {
+        overlay.style.opacity = 0.9
     }
 }
 
