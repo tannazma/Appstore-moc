@@ -207,6 +207,8 @@ aside {
     flex-direction: column;
     margin-left: 10px;
     border-bottom: 1.5px solid rgb(219, 219, 219);
+    flex: 1;
+    overflow: hidden;
 }
 
 .appLisButton {
@@ -219,14 +221,9 @@ aside {
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
-    width: 280px;
     font-size: 14px;
 }
 
-
-#app-list>* {
-    flex: 1 1 1;
-}
 
 #app-list>div {
     padding: 6px;
