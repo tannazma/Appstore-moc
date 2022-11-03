@@ -78,6 +78,7 @@ aside {
 
 .Menu span {
     color: rgb(43, 41, 174);
+    margin-right: 5px;
 }
 
 .Menu span svg {
@@ -91,6 +92,8 @@ aside {
     box-sizing: border-box;
     padding: 5px;
     margin: 6px;
+    display: flex;
+    align-items: center;
 }
 
 .Menu .Selected {
