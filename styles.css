@@ -15,6 +15,7 @@ aside {
     font-family: sans-serif;
     font-size: 15px;
     font-style: inherit;
+    padding-top: 10px;
 }
 
 .main-content {
@@ -71,7 +72,6 @@ aside {
 
 
 .Menu {
-    margin-top: 30px;
     color: #5e5d5d;
     font-size: 14px;
 }
@@ -273,4 +273,32 @@ aside {
     #app-list>div{
         width: 50%;
     }
+}
+.iconsTop{
+    display: flex;
+    padding: 5px;
+    margin: 6px;
+}
+.iconsTop button{
+    display: flex;
+    align-items: center;
+    border-radius: 50%;
+    width: 13px;
+    height: 13px;
+    border: 0;
+    margin-right: 9px;
+    padding-left: 2px;
+    font-size: 15px;
+    font-family: monospace;
+
+}
+
+#close{
+    background-color: #ff5f57
+}
+#minimize{
+    background-color: #febc2e;
+}
+#maximize{
+    background-color: #28c840;
 }
