@@ -5,4 +5,4 @@ TODO:
 - [x] Implement those 3 small icons in the top left of the sidebar
 - [x] Add search icon to the search input
 - [x] Pixel-Perfect the featured section
-- [ ] Put 4 apps in the featured section (and enable scrolling)
+- [x] Put 4 apps in the featured section (and enable scrolling)

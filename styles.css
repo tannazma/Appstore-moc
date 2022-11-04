@@ -148,6 +148,7 @@ aside {
     margin-bottom: 20px;
     overflow: auto;
     box-sizing: border-box;
+    scroll-snap-type: x proximity;
 
 }
 
@@ -163,14 +164,6 @@ aside {
 }
 
 
-.featured1 {
-    display: flex;
-    flex: 1;
-    background-color: #f3f3f3;
-    flex-direction: row;
-    border-radius: 8px;
-   min-width: 50%;
-}
 
 .featured-image {
     border-radius: 50%;
@@ -182,19 +175,17 @@ aside {
 
 }
 
-.featured2 {
+#featured>div {
     flex: 1;
     display: flex;
     background-color: #f3f3f3;
     flex-direction: row;
     border-radius: 8px;
-    min-width: 50%;
-}
-
-#featured>div {
+    min-width: calc(50% - 10px);
+    scroll-snap-align: start;
     padding: 6px;
-    display: flex;
     padding-left: 25px;
+    box-sizing: border-box;
 }
 
 .appListContainer {
