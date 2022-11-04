@@ -76,6 +76,22 @@ aside {
     font-size: 14px;
 }
 
+.searchbar {
+    background-color: rgb(244, 227, 249)
+}
+
+.searchInput {
+    width: 100%;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    padding-left: 5px;
+}
+
+.search {
+    width: 15px;
+}
+
 .Menu span {
     color: rgb(43, 41, 174);
     margin-right: 5px;
