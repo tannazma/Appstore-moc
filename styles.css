@@ -146,6 +146,8 @@ aside {
     border-radius: 8px;
     gap: 20px;
     margin-bottom: 20px;
+    overflow: auto;
+    box-sizing: border-box;
 
 }
 
@@ -167,7 +169,7 @@ aside {
     background-color: #f3f3f3;
     flex-direction: row;
     border-radius: 8px;
-   
+   min-width: 50%;
 }
 
 .featured-image {
@@ -186,6 +188,7 @@ aside {
     background-color: #f3f3f3;
     flex-direction: row;
     border-radius: 8px;
+    min-width: 50%;
 }
 
 #featured>div {
