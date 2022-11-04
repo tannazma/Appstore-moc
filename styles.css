@@ -167,6 +167,7 @@ aside {
     background-color: #f3f3f3;
     flex-direction: row;
     border-radius: 8px;
+   
 }
 
 .featured-image {
@@ -190,6 +191,7 @@ aside {
 #featured>div {
     padding: 6px;
     display: flex;
+    padding-left: 25px;
 }
 
 .appListContainer {
