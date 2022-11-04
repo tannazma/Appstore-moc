@@ -285,20 +285,26 @@ aside {
     border-radius: 50%;
     width: 13px;
     height: 13px;
-    border: 0;
     margin-right: 9px;
-    padding-left: 2px;
+    padding-left: 1.7px;
     font-size: 15px;
     font-family: monospace;
+    color: transparent;
 
 }
 
 #close{
-    background-color: #ff5f57
+    background-color: #ff5f57;
+    border: 0.5px solid #f84339;
 }
 #minimize{
     background-color: #febc2e;
+    border: 0.5px solid #f6ad10;
 }
 #maximize{
     background-color: #28c840;
+    border: 0.5px solid #1ab932;
+}
+.iconsTop button:hover{
+    color: black;
 }
