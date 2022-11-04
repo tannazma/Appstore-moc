@@ -269,17 +269,20 @@ aside {
     justify-content: space-between;
 
 }
-@media screen and (max-width:1138px){
-    #app-list>div{
+
+@media screen and (max-width:1138px) {
+    #app-list>div {
         width: 50%;
     }
 }
-.iconsTop{
+
+.iconsTop {
     display: flex;
     padding: 5px;
     margin: 6px;
 }
-.iconsTop button{
+
+.iconsTop button {
     display: flex;
     align-items: center;
     border-radius: 50%;
@@ -293,18 +296,21 @@ aside {
 
 }
 
-#close{
+#close {
     background-color: #ff5f57;
     border: 0.5px solid #f84339;
 }
-#minimize{
+
+#minimize {
     background-color: #febc2e;
     border: 0.5px solid #f6ad10;
 }
-#maximize{
+
+#maximize {
     background-color: #28c840;
     border: 0.5px solid #1ab932;
 }
-.iconsTop button:hover{
+
+.iconsTop button:hover {
     color: black;
 }
