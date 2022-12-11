@@ -114,18 +114,20 @@ mainContent.addEventListener("scroll", function () {
 
 function ScrollFeaturedRight() {
     const featuredScroller = document.querySelector("#featured")
+    const firstChildWidth = featuredScroller.firstElementChild.offsetWidth
     featuredScroller.scrollBy({
         top: 0,
-        left: 400,
+        left: firstChildWidth,
         behavior: 'smooth'
     });
 }
 
 function ScrollFeaturedLeft() {
     const featuredScroller = document.querySelector("#featured")
+    const firstChildWidth = featuredScroller.firstElementChild.offsetWidth
     featuredScroller.scrollBy({
         top: 0,
-        left: -400,
+        left: -firstChildWidth,
         behavior: 'smooth'
     });
 }
