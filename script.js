@@ -111,3 +111,12 @@ mainContent.addEventListener("scroll", function () {
 
 
 )
+
+function ScrollFeatured() {
+    const scrollRight = document.querySelector("#featured")
+    scrollRight.scrollBy({
+        top: 0,
+        left: 400,
+        behavior: 'smooth'
+    });
+}
