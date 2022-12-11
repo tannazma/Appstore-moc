@@ -112,11 +112,20 @@ mainContent.addEventListener("scroll", function () {
 
 )
 
-function ScrollFeatured() {
-    const scrollRight = document.querySelector("#featured")
-    scrollRight.scrollBy({
+function ScrollFeaturedRight() {
+    const featuredScroller = document.querySelector("#featured")
+    featuredScroller.scrollBy({
         top: 0,
         left: 400,
+        behavior: 'smooth'
+    });
+}
+
+function ScrollFeaturedLeft() {
+    const featuredScroller = document.querySelector("#featured")
+    featuredScroller.scrollBy({
+        top: 0,
+        left: -400,
         behavior: 'smooth'
     });
 }
