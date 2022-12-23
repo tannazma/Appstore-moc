@@ -316,7 +316,7 @@ aside {
     border: none;
     font-size: x-large;
     transform: scale(1.5, 2.5);
-    color: #9c9c9c;
+    display: none;
 }
 
 .handlePrev {
@@ -327,7 +327,7 @@ aside {
     border: none;
     font-size: x-large;
     transform: scale(1.5, 2.5);
-    color: #9c9c9c;
+    display: none;
 }
 
 #close {
@@ -347,4 +347,9 @@ aside {
 
 .iconsTop button:hover {
     color: black;
+}
+
+#featured:hover button {
+    display: block;
+    color: #5e5d5d;
 }
