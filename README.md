@@ -8,7 +8,7 @@ TODO:
 - [x] Put 4 apps in the featured section (and enable scrolling)
 
 TODO series 2:
-- [ ] Add Slide Left and Slide Right buttons to featured section
+- [x] Add Slide Left and Slide Right buttons to featured section
 - [ ] Make the Discover header appear only in the content section (and not in top of sidebar section)
 - [ ] use a free stock photos source for images of the banner and featured section
 - [ ] Create a GitHub repository

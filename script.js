@@ -131,8 +131,12 @@ function ScrollFeaturedLeft() {
         behavior: 'smooth'
     });
 }
+
+
+
 const features = document.querySelector("#featured")
-features.addEventListener("scroll", function () {
+
+function eventListener() {
     const buttonRight = document.querySelector(".handleNext")
     if (features.scrollLeft + features.offsetWidth === features.scrollWidth) {
         buttonRight.disabled = true
@@ -149,4 +153,6 @@ features.addEventListener("scroll", function () {
         buttonLeft.disabled = false
     }
 }
-)
+eventListener()
+
+features.addEventListener("scroll", eventListener())
