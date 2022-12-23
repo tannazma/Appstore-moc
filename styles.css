@@ -308,10 +308,9 @@ aside {
 
 }
 
-.handleNext {
+.handlePrevNext {
     position: absolute;
     height: 230px;
-    left: 2px;
     background: transparent;
     border: none;
     font-size: x-large;
@@ -319,15 +318,12 @@ aside {
     display: none;
 }
 
+.handleNext {
+    left: 2px;
+}
+
 .handlePrev {
-    position: absolute;
-    height: 230px;
     right: 2px;
-    background: transparent;
-    border: none;
-    font-size: x-large;
-    transform: scale(1.5, 2.5);
-    display: none;
 }
 
 #close {
