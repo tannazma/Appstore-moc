@@ -131,3 +131,11 @@ function ScrollFeaturedLeft() {
         behavior: 'smooth'
     });
 }
+const features = document.querySelector("#featured")
+features.addEventListener("scroll", function () {
+if(features.scrollLeft===0){
+    const buttonLeft =document.querySelector(".handlePrev")
+    buttonLeft.disabled=true
+}
+}
+)

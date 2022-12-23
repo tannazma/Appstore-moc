@@ -318,12 +318,16 @@ aside {
     display: none;
 }
 
+.handlePrevNext[disabled] {
+    opacity: 0.2;
+}
+
 .handleNext {
-    left: 2px;
+    right: 2px;
 }
 
 .handlePrev {
-    right: 2px;
+    left: 2px;
 }
 
 #close {
