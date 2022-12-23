@@ -133,16 +133,20 @@ function ScrollFeaturedLeft() {
 }
 const features = document.querySelector("#featured")
 features.addEventListener("scroll", function () {
+    const buttonRight = document.querySelector(".handleNext")
     if (features.scrollLeft + features.offsetWidth === features.scrollWidth) {
-        const buttonRight = document.querySelector(".handleNext")
         buttonRight.disabled = true
+    } else {
+        buttonRight.disabled = false
     }
 
-
+    
+    const buttonLeft = document.querySelector(".handlePrev")
     if (features.scrollLeft === 0) {
-        const buttonLeft = document.querySelector(".handlePrev")
         buttonLeft.disabled = true
 
+    } else {
+        buttonLeft.disabled = false
     }
 }
 )
