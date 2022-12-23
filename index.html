@@ -38,10 +38,8 @@
                 <p>Level up your browsers with these apps.</p>
             </image>
         </div>
-        <button onclick="ScrollFeaturedRight()">❯</button>
-        <button onclick="ScrollFeaturedLeft()">❮</button>
-
         <div id="featured">
+            <button class="handleNext" onclick="ScrollFeaturedRight()">❮</button>
             <div class="featured1">
                 <div>
                     <p>FEATURED APP</p>
@@ -74,6 +72,7 @@
                 </div>
                 <image class="featured-image" src="featured2.png"></image>
             </div>
+            <button class="handlePrev" onclick="ScrollFeaturedLeft()">❯</button>
         </div>
         <div class="appListContainer">
             <h3 id="appListTitle">Great New Apps And Updates</h3>

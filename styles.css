@@ -308,6 +308,28 @@ aside {
 
 }
 
+.handleNext {
+    position: absolute;
+    height: 230px;
+    left: 2px;
+    background: transparent;
+    border: none;
+    font-size: x-large;
+    transform: scale(1.5, 2.5);
+    color: #9c9c9c;
+}
+
+.handlePrev {
+    position: absolute;
+    height: 230px;
+    right: 2px;
+    background: transparent;
+    border: none;
+    font-size: x-large;
+    transform: scale(1.5, 2.5);
+    color: #9c9c9c;
+}
+
 #close {
     background-color: #ff5f57;
     border: 0.5px solid #f84339;
