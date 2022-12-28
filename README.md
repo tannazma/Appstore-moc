@@ -9,7 +9,7 @@ TODO:
 
 TODO series 2:
 - [x] Add Slide Left and Slide Right buttons to featured section
-- [ ] Make the Discover header appear only in the content section (and not in top of sidebar section)
+- [x] Make the Discover header appear only in the content section (and not in top of sidebar section)
 - [ ] use a free stock photos source for images of the banner and featured section
 - [ ] Create a GitHub repository
 - [ ] Use GitHub pages to make your website available locally
