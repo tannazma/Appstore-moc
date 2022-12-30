@@ -153,6 +153,5 @@ function eventListener() {
         buttonLeft.disabled = false
     }
 }
-eventListener()
 
-features.addEventListener("scroll", eventListener())
+features.addEventListener("scroll", eventListener)
