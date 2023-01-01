@@ -12,7 +12,7 @@ TODO series 2:
 - [x] Make the Discover header appear only in the content section (and not in top of sidebar section)
 - [x] use a free stock photos source for images of the banner and featured section
 - [x] Create a GitHub repository
-- [ ] Use GitHub pages to make your website available public
+- [x] Use GitHub pages to make your website available public
 - [ ] Do a little polish on the visuals of the website (final touches)
 - [ ] Replace this README.md with a descent and good-looking description of what this project is
 - [ ] Ask for my review
