@@ -25,6 +25,7 @@ aside {
     position: relative;
     height: 100vh;
     overflow: auto;
+    overflow-x: hidden;
 
 }
 
