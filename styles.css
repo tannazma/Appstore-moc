@@ -34,6 +34,7 @@ aside {
     height: 50px;
     top: 0px;
     background-color: #f2f4e1;
+    opacity: 0;
 }
 
 .text {
