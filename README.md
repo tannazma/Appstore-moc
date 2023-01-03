@@ -1,3 +1,5 @@
+
+
 TODO:
 - [x] Currently on hover, we can see the Discover header. We don't want that. We want it only on scroll.
 - [x] The app list (those 9 apps) mix into each other when screen is small
@@ -13,6 +15,6 @@ TODO series 2:
 - [x] use a free stock photos source for images of the banner and featured section
 - [x] Create a GitHub repository
 - [x] Use GitHub pages to make your website available public
-- [ ] Do a little polish on the visuals of the website (final touches)
+- [x] Do a little polish on the visuals of the website (final touches)
 - [ ] Replace this README.md with a descent and good-looking description of what this project is
 - [ ] Ask for my review
